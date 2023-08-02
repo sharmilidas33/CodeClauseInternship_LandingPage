@@ -31,7 +31,7 @@ This is a product landing website for a beauty products brand, "Beauty at Your T
 
 ## Demo
 
-A live demo of the website can be accessed [https://joyful-biscochitos-95d5eb.netlify.app/]
+A live demo of the website can be accessed [https://64ca6f142be8843593ce90a1--fanciful-gingersnap-2f7a3b.netlify.app/]
 
 ## Technologies Used
 
