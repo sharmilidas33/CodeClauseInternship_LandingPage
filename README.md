@@ -61,7 +61,7 @@ This project is licensed under the [MIT License](LICENSE).
 For any inquiries or feedback, please contact:
 
 Sharmili Das
-- Email: sharmilidas1@example.com
+- Email: sharmilidas1@gmail.com
 - LinkedIn: [Sharmili Das](https://www.linkedin.com/in/sharmili-das-980984220/)
 
 Feel free to reach out if you have any questions or want to get involved in the project.
