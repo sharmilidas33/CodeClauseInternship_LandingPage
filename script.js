@@ -35,26 +35,4 @@ function submit(){
 });
 }
 submit();
-function isInViewport(element) {
-    var rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
-function updateActiveLink() {
-    var sections = document.querySelectorAll("section");
-    var headerLinks = document.querySelectorAll("nav a");
-    
-    sections.forEach((section, index) => {
-        if (isInViewport(section)) {
-            headerLinks.forEach(link => link.classList.remove("active"));
-            headerLinks[index].classList.add("active");
-        }
-    });
-}
 
-window.addEventListener("scroll", updateActiveLink);
-updateActiveLink();
