@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="fixed top-0 left-0 right-0 text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="https://png.pngtree.com/png-vector/20211011/ourlarge/pngtree-lipstick-and-lip-for-make-up-or-cosmetics-logo-png-image_3976837.png" class="w-10 h-10 object-cover rounded-full">
+                <span class="ml-3 text-xl">Beauty at your tips</span>
+            </a>
+            <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-900" class="nav-link" href="#home">Home</a>
+                <a class="mr-5 hover:text-gray-900" class="nav-link" href="#about">About</a>
+                <a class="mr-5 hover:text-gray-900" class="nav-link" href="#products">Products</a>
+                <a class="mr-5 hover:text-gray-900" class="nav-link" href="#contact">Contact</a>
+            </nav>
+            <button class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0" onclick="showAlert()">Sign Up
+                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+    <section id="home" class="text-gray-600 body-font">
+        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+            <div class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
+                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Find your Best Beauty Products
+                    <br class="hidden lg:inline-block">
+                    <span class="text-base block md:inline">Unleash the beauty within!</span>
+                </h1>
+                <p class="mb-8 leading-relaxed">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque totam, ipsa nihil optio vitae minus fuga sed quibusdam repellat fugit. Nostrum, tempore error ratione expedita accusamus dolorem recusandae id quasi.</p>
+                <div class="flex justify-center">
+                    <button id="btn" class="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" onclick="getStarted()">Get Started, Get Beautified</button>
+                </div>
+            </div>
+            <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+                <img class="object-cover object-center rounded" alt="hero" src="https://images.yourstory.com/cs/4/211ccaf00e6d11e997fe8f165dce9bb1/Imageifxu-1596799036123-1601633425902.jpg?w=1152&fm=auto&ar=2:1&mode=crop&crop=faces">
+            </div>
+        </div>
+    </section>
+    <section id="about" class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+                <img alt="feature" class="object-cover object-center h-full w-full" src="https://images.unsplash.com/photo-1625093742435-6fa192b6fb10?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bGlwc3RpY2t8ZW58MHx8MHx8fDA%3D&w=1000&q=80">
+            </div>
+            <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+                <h1 class="text-3xl font-bold mb-4">About the Latest Product - Lipstick</h1>
+                <ul class="bg-white p-4 rounded-lg shadow">
+                    <li class="mb-2"><span class="font-bold">Brand:</span> ABC Cosmetics</li>
+                    <li class="mb-2"><span class="font-bold">Product Name:</span> SuperStay Longwear Lipstick</li>
+                    <li class="mb-2"><span class="font-bold">Color:</span> Ruby Red</li>
+                    <li class="mb-2"><span class="font-bold">Formulation:</span> Matte</li>
+                    <li class="mb-2">Long-lasting formula for all-day wear</li>
+                    <li class="mb-2">Enriched with moisturizing ingredients</li>
+                    <li class="mb-2">Smudge-proof and transfer-resistant</li>
+                    <li class="mb-2">Available in various shades</li>
+                    <li>Packaging: Sleek and stylish</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="products" class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col">
+                <div class="h-1">
+                </div>
+                <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+                <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">Grab Affordable Products at Reasonable Prices</h1>
+                </div>
+            </div>
+            <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+                <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                <div class="rounded-lg h-64 overflow-hidden">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="https://media.istockphoto.com/id/639887002/photo/beige-face-powder-for-make-up.jpg?s=170667a&w=0&k=20&c=t_3IYoUwfFktQXhBnXGVzRZ8JEzZND5FQ1kUfAWRxiE=">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Face Powders starting at RS 99/- only</h2>
+                <p class="text-base leading-relaxed mt-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio nam exercitationem, sunt ullam optio dignissimos rerum cumque ratione voluptas nemo recusandae tempore aut magnam id ut obcaecati commodi, explicabo aliquid!</p>
+                <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                <div class="rounded-lg h-64 overflow-hidden">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="https://media.istockphoto.com/id/906517920/photo/eye-shadow-palette.webp?b=1&s=170667a&w=0&k=20&c=phA_VI-ikIGtCOw6JnvS1hXwqi_YqJNmx6EQvYGP3ho=">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Eye-Shadow Palettes starting at RS 199/- only</h2>
+                <p class="text-base leading-relaxed mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente libero sint dolorum, quis vero eaque totam quisquam aliquam praesentium explicabo esse, vel quae debitis fuga corporis optio numquam est distinctio?</p>
+                <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+            <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+                <div class="rounded-lg h-64 overflow-hidden">
+                    <img alt="content" class="object-cover object-center h-full w-full" src="https://media.self.com/photos/59b1aae29977db2962cab3eb/16:9/w_1279,h_719,c_limit/mascara-wand-black.jpg">
+                </div>
+                <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Mascaras staring from RS 79/-</h2>
+                <p class="text-base leading-relaxed mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum nulla modi a numquam. Nisi vitae quos repellat. At velit quis, consectetur atque nisi ex nihil recusandae iste vero iusto voluptates!</p>
+                <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="contact" class="text-gray-600 body-font relative">
+        <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+            <div class="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative"> 
+                <iframe width="100%" height="100%" class="absolute inset-0" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14750.628152843176!2d88.31856972277832!3d22.57370094941296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277147f7d2313%3A0xf88260251583d6a2!2sKolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1627879668913!5m2!1sen!2sin" style="filter: grayscale(1) contrast(1.2) opacity(0.4);"></iframe>
+                <div class="bg-white relative flex flex-wrap py-6 rounded shadow-md">
+                <div class="lg:w-1/2 px-6">
+                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">ADDRESS</h2>
+                    <p class="mt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam ratione nostrum nisi consequatur? Vero aliquid aut ipsam, totam optio modi explicabo nulla aspernatur laboriosam ratione quae atque earum ipsum illum?</p>
+                </div>
+                <div class="lg:w-1/2 px-10 mt-4 lg:mt-0">
+                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs">EMAIL</h2>
+                    <a href="mailto:sharmilidas1@gmail.com" class="text-indigo-500 leading-relaxed">sharmilidas1@email.com</a>
+                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">SOCIALS-</h2>
+                    <div class="flex">
+                        <a href="https://www.linkedin.com/in/sharmili-das-980984220/" class="text-indigo-500 leading-relaxed">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/800px-LinkedIn_logo_initials.png" alt="linkedin" width="30" height="30">
+                        </a>
+                        
+                        <a href="https://www.instagram.com/shormiliiiiii/" class="text-indigo-500 leading-relaxed ml-2" >
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Insta" width="30" height="30" >
+                        </a>
+
+                        <a href="https://www.facebook.com/sharmili.das.399" class="text-indigo-500 leading-relaxed ml-2" >
+                            <img src="https://pngimg.com/d/facebook_logos_PNG19750.png" alt="Insta" width="30" height="30" >
+                        </a>
+                    </div>
+                    <h2 class="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
+                    <p class="leading-relaxed">123-456-7890</p>
+                </div>
+                </div>
+            </div>
+            <div id="feedback-form" class="lg:w-1/3 md:w-1/2 bg-bisque flex flex-col md:ml-auto w-full md:py-10 mt-8 md:mt-0">
+                <h2 class="text-gray-900 text-lg mb-1 font-medium title-font px-4">Feedback</h2>
+                <p class="leading-relaxed mb-5 text-gray-600 px-4">Post your feedback here</p>
+                <div class="relative mb-4">
+                <label for="name" class="leading-7 text-sm text-gray-600 px-4">Name</label>
+                <input type="text" id="name" name="name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-4 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                <label for="email" class="leading-7 text-sm text-gray-600 px-4">Email</label>
+                <input type="email" id="email" name="email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                <label for="message" class="leading-7 text-sm text-gray-600 px-4">Message</label>
+                <textarea id="message" name="message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                </div>
+                <button class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg px-4" type="submit" id="submit-button">Submit</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
